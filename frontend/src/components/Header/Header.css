@@ -1,0 +1,92 @@
+.header{
+    width: 100%;
+    height: 34vw;
+    margin: 30px auto;
+    background: url('/header_img2.jpg') no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    opacity:0.8;
+}
+/* width: 100%; 
+height: auto;
+display: block; 
+opacity: 0.8;
+position: relative; 
+z-index: 0;*/
+.header-contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 3s;
+}
+
+.header-contents h2{
+    font-weight: 500;
+    color: rgb(255, 253, 253);
+    font-size: max(4.5vw,22px);
+}
+
+.header-contents p{
+    color: white;
+    font-size: 1vw;
+}
+
+.header-contents button{
+    border: none;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background-color: white;
+    font-size: max(1vw, 13px);
+    border-radius: 50px;
+}
+
+@media (max-width:1050px) {
+    .header-contents{
+        max-width: 45%;
+    }
+}
+
+@media (max-width:750px) {
+    .header-contents{
+        max-width: 65%;
+    }
+    .header-contents p{
+        display: none;
+    }
+    .header-contents button{
+        padding: 2vw 4vw;
+    }
+}
+
+/*:root .buttonwl {
+    color: black;
+}
+
+.lightcolors .buttonwl {
+    color: #747474;
+}
+
+
+*/
+
+
+
+
+
+
+
+/*width: 100%; /* Increase the width to make the picture full width 
+height: 34vw;
+margin: 30px auto;
+background: url('/header_img2.jpg') no-repeat;
+background-size: cover; /* Change to cover to make it fill the width 
+border-radius: 15px; /* Add rounded corners 
+position: relative;
+overflow: hidden; /* Ensures corners are actually rounded */
